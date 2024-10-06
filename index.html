@@ -7,15 +7,16 @@
     <style>
         /* Estilos básicos para la página */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Tipo de letra */
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4; /* Color de fondo */
         }
 
         /* Estilos para la barra de navegación */
         .tab {
             overflow: hidden;
-            background-color: #f1f1f1;
+            background-color: #001f3f; /* Color azul marino */
         }
 
         /* Estilos para cada pestaña */
@@ -27,16 +28,17 @@
             padding: 14px 16px;
             transition: 0.3s;
             font-size: 17px;
+            color: white; /* Color del texto en las pestañas */
         }
 
         /* Estilos para pestañas al pasar el mouse */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: #0056b3; /* Color azul claro al pasar el mouse */
         }
 
         /* Estilos para la pestaña activa */
         .tab button.active {
-            background-color: #ccc;
+            background-color: #004080; /* Color azul oscuro para la pestaña activa */
         }
 
         /* Estilos para el contenido de las pestañas */
@@ -44,6 +46,7 @@
             display: none;
             padding: 6px 12px;
             border-top: none;
+            border: 1px solid #ddd; /* Borde de las secciones de contenido */
         }
     </style>
 </head>
@@ -115,3 +118,4 @@
 
 </body>
 </html>
+
