@@ -7,26 +7,34 @@
     <style>
         /* Estilos básicos para la página */
         body {
-            font-family: Times New Romans, sans-serif; /* Tipo de letra */
+            font-family: Arial, sans-serif; /* Tipo de letra */
             margin: 0;
             padding: 0;
             background-color: #f4f4f4; /* Color de fondo */
         }
-            /* Estilos para la imagen de encabezado */
+
+        /* Contenedor para el encabezado y las pestañas */
+        .header-tab-container {
+            display: flex;
+            align-items: center;
+            background-color: #001f3f; /* Color azul marino */
+        }
+
+        /* Estilos para la imagen de encabezado */
         .header {
-            width: 100%;
+            width: 100px;
             height: auto;
+            margin-right: 20px; /* Espacio entre la imagen y las pestañas */
         }
 
         /* Estilos para la barra de navegación */
         .tab {
-            overflow: hidden;
-            background-color: #001f3f; /* Color azul marino */
+            flex-grow: 1; /* Para que las pestañas ocupen el espacio restante */
         }
 
         /* Estilos para cada pestaña */
         .tab button {
-            background-color: #001f3f;
+            background-color: inherit;
             border: none;
             outline: none;
             cursor: pointer;
@@ -57,16 +65,19 @@
 </head>
 <body>
 
+<!-- Contenedor para el encabezado y las pestañas -->
+<div class="header-tab-container">
     <!-- Imagen de encabezado -->
-<img src="Logo SM.jpeg" alt="Encabezado" class="header">
+    <img src="ruta/a/tu/imagen.jpg" alt="Encabezado" class="header">
     
-<!-- Barra de navegación con pestañas -->
-<div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
-    <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
-    <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
-    <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
-    <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
+    <!-- Barra de navegación con pestañas -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Intro')">Introducción</button>
+        <button class="tablinks" onclick="openTab(event, 'Mapa')">Mapa</button>
+        <button class="tablinks" onclick="openTab(event, 'Analisis')">Análisis de Datos</button>
+        <button class="tablinks" onclick="openTab(event, 'Solucion')">Solución</button>
+        <button class="tablinks" onclick="openTab(event, 'Referencias')">Referencias</button>
+    </div>
 </div>
 
 <!-- Contenido de la pestaña Introducción -->
@@ -126,4 +137,3 @@
 
 </body>
 </html>
-
